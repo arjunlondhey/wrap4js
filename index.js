@@ -1,8 +1,14 @@
-let { simpleIterable } = require('./SimpleIterable/simpleIterable.js');
-let { addBigIntegers } = require('./AddBigIntegers/addBigIntegers.js');
-const a = addBigIntegers(`3
-539
-8
-201`);
+const {
+    init
+} = require('./Memoize/memoize');
 
-console.log(a);
+const {
+    convertIntToRoman
+} = require('./IntToRoman/intToRoman.js');
+
+const {
+    flatten
+} = require('./Flatten/flatten.js');
+//init();
+//convertIntToRoman(19);
+flatten([1, 2, [3, 4, [5, 6]]], 2);
