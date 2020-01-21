@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "jest": "^24.9.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/arjunlondhey/wrap4js/issues"
   },
-  "homepage": "https://github.com/arjunlondhey/wrap4js#readme"
+  "homepage": "https://github.com/arjunlondhey/wrap4js#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
