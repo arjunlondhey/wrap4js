@@ -1,14 +1,22 @@
-const {
-    init
-} = require('./Memoize/memoize');
+let {
+    isomorphic
+} = require('./Isomorphic/isomorphic.js');
 
-const {
-    convertIntToRoman
-} = require('./IntToRoman/intToRoman.js');
+let {
+    balancedBraces
+} = require('./BalancedBraces/balancedBraces.js');
+let {
+    updateInventory
+} = require('./UpdateInventory/updateInventory.js');
 
-const {
-    flatten
-} = require('./Flatten/flatten.js');
-//init();
-//convertIntToRoman(19);
-flatten([1, 2, [3, 4, [5, 6]]], 2);
+console.log(updateInventory([
+    [21, 'Bowling Ball'],
+    [2, 'Dirty Sock'],
+    [1, 'Hair Pin'],
+    [5, 'Microphone'],
+], [
+    [2, 'Hair Pin'],
+    [3, 'Half-Eaten Apple'],
+    [67, 'Bowling Ball'],
+    [7, 'Toothpaste'],
+]));
